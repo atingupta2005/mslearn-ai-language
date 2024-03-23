@@ -9,7 +9,9 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv("~/.env")
+        dotenv_path = os.path.expanduser('~/.env') 
+
+load_dotenv(dotenv_path)
         cog_key = os.getenv('COG_SERVICE_KEY')
         cog_region = os.getenv('COG_SERVICE_REGION')
         translator_endpoint = 'https://api.cognitive.microsofttranslator.com'

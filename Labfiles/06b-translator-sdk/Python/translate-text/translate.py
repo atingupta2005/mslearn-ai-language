@@ -8,7 +8,9 @@ import os
 def main():
     try:
         # Get Configuration Settings
-        load_dotenv("~/.env")
+        dotenv_path = os.path.expanduser('~/.env') 
+
+load_dotenv(dotenv_path)
         translatorRegion = os.getenv('TRANSLATOR_REGION')
         translatorKey = os.getenv('TRANSLATOR_KEY')
 

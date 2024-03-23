@@ -11,7 +11,9 @@ def main():
         global translation_config
 
         # Get Configuration Settings
-        load_dotenv("~/.env")
+        dotenv_path = os.path.expanduser('~/.env') 
+
+load_dotenv(dotenv_path)
         ai_key = os.getenv('SPEECH_KEY')
         ai_region = os.getenv('SPEECH_REGION')
 
