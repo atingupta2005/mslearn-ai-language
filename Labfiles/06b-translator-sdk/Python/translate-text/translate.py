@@ -10,7 +10,7 @@ def main():
         # Get Configuration Settings
         dotenv_path = os.path.expanduser('~/.env') 
 
-load_dotenv(dotenv_path)
+        load_dotenv(dotenv_path)
         translatorRegion = os.getenv('TRANSLATOR_REGION')
         translatorKey = os.getenv('TRANSLATOR_KEY')
 

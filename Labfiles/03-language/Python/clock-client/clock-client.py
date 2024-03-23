@@ -13,7 +13,7 @@ def main():
         # Get Configuration Settings
         dotenv_path = os.path.expanduser('~/.env') 
 
-load_dotenv(dotenv_path)
+        load_dotenv(dotenv_path)
         ls_prediction_endpoint = os.getenv('LS_CONVERSATIONS_ENDPOINT')
         ls_prediction_key = os.getenv('LS_CONVERSATIONS_KEY')
 
