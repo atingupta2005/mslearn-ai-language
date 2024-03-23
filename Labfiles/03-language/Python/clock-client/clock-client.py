@@ -11,7 +11,7 @@ def main():
 
     try:
         # Get Configuration Settings
-        load_dotenv()
+        load_dotenv(~/.env)
         ls_prediction_endpoint = os.getenv('LS_CONVERSATIONS_ENDPOINT')
         ls_prediction_key = os.getenv('LS_CONVERSATIONS_KEY')
 
