@@ -1,9 +1,9 @@
 from dotenv import load_dotenv
 import os
 
-// import namespaces
-using Azure;
-using Azure.AI.Language.QuestionAnswering;
+# import namespaces
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.language.questionanswering import QuestionAnsweringClient
 
 
 def main():
