@@ -7,7 +7,7 @@ import os
 def main():
     try:
         # Get Configuration Settings
-        load_dotenv(~/.env)
+        load_dotenv("~/.env")
         ai_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
         ai_key = os.getenv('AI_SERVICE_KEY')
         ai_project_name = os.getenv('QA_PROJECT_NAME')
