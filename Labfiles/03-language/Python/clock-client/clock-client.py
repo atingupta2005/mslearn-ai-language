@@ -4,9 +4,9 @@ import json
 from datetime import datetime, timedelta, date, timezone
 from dateutil.parser import parse as is_date
 
-// import namespaces
-using Azure;
-using Azure.AI.Language.Conversations;
+# Import namespaces
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.language.conversations import ConversationAnalysisClient
 
 def main():
 
