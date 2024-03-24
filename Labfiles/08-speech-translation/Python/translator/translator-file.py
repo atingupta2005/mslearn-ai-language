@@ -4,7 +4,7 @@ import os
 
 # Import namespaces
 import azure.cognitiveservices.speech as speech_sdk
-
+from playsound import playsound
 
 def main():
     try:
