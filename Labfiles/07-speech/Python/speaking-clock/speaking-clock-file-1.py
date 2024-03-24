@@ -35,7 +35,8 @@ def TranscribeCommand():
 
     # Configure speech recognition
     current_dir = os.getcwd()
-    audioFile = current_dir + '\\time.wav'
+    audioFile = current_dir + '/time.wav'
+    print(f"Reading file - {audioFile}")
     playsound(audioFile)
     audio_config = speech_sdk.AudioConfig(filename=audioFile)
     speech_recognizer = speech_sdk.SpeechRecognizer(speech_config, audio_config)
